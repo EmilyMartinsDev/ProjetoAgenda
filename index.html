@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Meus contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MEUS CONTATOS</h1>
+        </header>
+        <p class="alerta">USUARIO JA EXITE</p>
+        <form id="form">
+            <input type="text" id="nome" placeholder="Nome do contato" required>
+            <input type="tel" id="tel" placeholder="telefone do contato" required>
+            <button type="submit" id="button">Adicionar</button>
+        </form>
+   
+        <table  cellspacing = '0'>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th id="edicao">Edições</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
