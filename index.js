@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     const nomeContato = inputNome.value;
     const telContato = inputTel.value;
 
-    if (todosTelContato.includes(telContato)) {
+    if (todosTelContato.some(tel=> tel === telContato) && todosNomeContato.some(nome=> nome === nomeContato)  ) {
         // mensagem essa pessoa ja está cadastrada com esse numero
         alerta.style.display = 'block';
         alerta.innerHTML = " Usuário já existente "
